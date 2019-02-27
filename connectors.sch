@@ -403,9 +403,12 @@ Wire Wire Line
 Wire Wire Line
 	6125 2500 6550 2500
 Connection ~ 6550 2500
+Wire Wire Line
+	6550 2050 7100 2050
+Connection ~ 6550 2050
 $Comp
 L LP38693:LP38693 U?
-U 1 1 5C7ABABC
+U 1 1 5C7B161D
 P 7500 2150
 F 0 "U?" H 7500 2515 50  0000 C CNN
 F 1 "LP38693" H 7500 2424 50  0000 C CNN
@@ -414,7 +417,4 @@ F 3 "http://www.ti.com/lit/ds/snvs321o/snvs321o.pdf" H 7500 2150 50  0001 C CNN
 	1    7500 2150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6550 2050 7100 2050
-Connection ~ 6550 2050
 $EndSCHEMATC
