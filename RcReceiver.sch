@@ -228,7 +228,7 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    0    0    -1  
 $EndComp
 Text Label 2025 900  2    50   ~ 0
-VDDCPU
+VCCCPU
 $Comp
 L Device:C C8
 U 1 1 5C74E65D
