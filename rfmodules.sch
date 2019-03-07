@@ -4,11 +4,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 3
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "SX1280 based RC receiver"
+Date "2019-02-25"
+Rev "1"
+Comp "bodrico.com"
+Comment1 "Designed by bodri@bodrico.com"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -47,10 +47,10 @@ F 3 "http://www.ti.com/lit/ds/snvs321o/snvs321o.pdf" H 2500 1925 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C31
+L Device:C C30
 U 1 1 5C7BA5D5
 P 3125 1975
-F 0 "C31" H 3240 2021 50  0000 L CNN
+F 0 "C30" H 3240 2021 50  0000 L CNN
 F 1 "1uF" H 3240 1930 50  0000 L CNN
 F 2 "" H 3163 1825 50  0001 C CNN
 F 3 "~" H 3125 1975 50  0001 C CNN
@@ -58,10 +58,10 @@ F 3 "~" H 3125 1975 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C30
+L Device:C C29
 U 1 1 5C7BA627
 P 1675 1975
-F 0 "C30" H 1790 2021 50  0000 L CNN
+F 0 "C29" H 1790 2021 50  0000 L CNN
 F 1 "1uF" H 1790 1930 50  0000 L CNN
 F 2 "" H 1713 1825 50  0001 C CNN
 F 3 "~" H 1675 1975 50  0001 C CNN
@@ -205,10 +205,10 @@ Wire Wire Line
 	1425 2250 1675 2250
 Connection ~ 1675 2250
 $Comp
-L Device:C C29
+L Device:C C28
 U 1 1 5C7CD227
 P 4375 1825
-F 0 "C29" V 4123 1825 50  0000 C CNN
+F 0 "C28" V 4123 1825 50  0000 C CNN
 F 1 "100nF" V 4214 1825 50  0000 C CNN
 F 2 "" H 4413 1675 50  0001 C CNN
 F 3 "~" H 4375 1825 50  0001 C CNN
@@ -216,10 +216,10 @@ F 3 "~" H 4375 1825 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C33
+L Device:C C32
 U 1 1 5C7CD2B2
 P 4375 4350
-F 0 "C33" V 4123 4350 50  0000 C CNN
+F 0 "C32" V 4123 4350 50  0000 C CNN
 F 1 "100nF" V 4214 4350 50  0000 C CNN
 F 2 "" H 4413 4200 50  0001 C CNN
 F 3 "~" H 4375 4350 50  0001 C CNN
@@ -261,11 +261,11 @@ Wire Wire Line
 Wire Wire Line
 	4075 4350 4075 4725
 $Comp
-L Device:CP C32
+L Device:CP C31
 U 1 1 5C8A056F
 P 3725 2025
-F 0 "C32" H 3843 2071 50  0000 L CNN
-F 1 "100uF" H 3843 1980 50  0000 L CNN
+F 0 "C31" H 3843 2071 50  0000 L CNN
+F 1 "10uF" H 3843 1980 50  0000 L CNN
 F 2 "" H 3763 1875 50  0001 C CNN
 F 3 "~" H 3725 2025 50  0001 C CNN
 	1    3725 2025
