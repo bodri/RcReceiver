@@ -359,4 +359,6 @@ Wire Wire Line
 Connection ~ 4075 5900
 Wire Wire Line
 	4075 5900 4125 5900
+Text Label 1675 1825 2    50   ~ 0
+VCC
 $EndSCHEMATC
