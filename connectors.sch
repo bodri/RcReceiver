@@ -614,7 +614,7 @@ AR Path="/5CCDDFDF" Ref="J?"  Part="1"
 AR Path="/5C76B390/5CCDDFDF" Ref="J13"  Part="1" 
 F 0 "J13" H 9380 4442 50  0000 L CNN
 F 1 "CAN" H 9380 4351 50  0000 L CNN
-F 2 "Connector_JST:JST_PH_B3B-PH-SM4-TB_1x03-1MP_P2.00mm_Vertical" H 9300 4400 50  0001 C CNN
+F 2 "Connector_JST:JST_SH_BM03B-SRSS-TB_1x03-1MP_P1.00mm_Vertical" H 9300 4400 50  0001 C CNN
 F 3 "~" H 9300 4400 50  0001 C CNN
 	1    9300 4400
 	1    0    0    -1  
@@ -863,4 +863,30 @@ Wire Wire Line
 Connection ~ 8375 2500
 Text Label 5000 2050 2    50   ~ 0
 VCC
+$Comp
+L Connector_Generic:Conn_01x01 J17
+U 1 1 5CF3538C
+P 5450 6350
+F 0 "J17" H 5529 6392 50  0000 L CNN
+F 1 "GND for the Servo connectors" H 5529 6301 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5450 6350 50  0001 C CNN
+F 3 "~" H 5450 6350 50  0001 C CNN
+	1    5450 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR031
+U 1 1 5CF35494
+P 5200 6400
+F 0 "#PWR031" H 5200 6150 50  0001 C CNN
+F 1 "GND" H 5205 6227 50  0000 C CNN
+F 2 "" H 5200 6400 50  0001 C CNN
+F 3 "" H 5200 6400 50  0001 C CNN
+	1    5200 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 6400 5200 6350
+Wire Wire Line
+	5200 6350 5250 6350
 $EndSCHEMATC

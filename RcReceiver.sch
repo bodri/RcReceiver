@@ -432,7 +432,7 @@ F 3 "" H 2050 2375 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2050 2375 2050 2325
+	2050 2375 2050 2350
 $Sheet
 S 7550 3775 1625 1675
 U 5C7B9FBC
@@ -1271,4 +1271,26 @@ Wire Wire Line
 Connection ~ 1850 3450
 Wire Wire Line
 	1850 3450 2450 3450
+$Comp
+L Device:C C33
+U 1 1 5CF3CB0A
+P 1650 2150
+F 0 "C33" H 1765 2196 50  0000 L CNN
+F 1 "100nF" H 1765 2105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1688 2000 50  0001 C CNN
+F 3 "~" H 1650 2150 50  0001 C CNN
+	1    1650 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 2350 1650 2350
+Wire Wire Line
+	1650 2350 1650 2300
+Connection ~ 2050 2350
+Wire Wire Line
+	2050 2350 2050 2325
+Wire Wire Line
+	1650 2000 1650 1825
+Wire Wire Line
+	1650 1825 2625 1825
 $EndSCHEMATC
