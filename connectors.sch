@@ -102,81 +102,64 @@ F 3 "~" H 5450 5600 50  0001 C CNN
 	1    5450 5600
 	1    0    0    -1  
 $EndComp
-$Comp
-L Logic_LevelTranslator:TXB0108DQSR U4
-U 1 1 5C76B772
-P 3600 3800
-F 0 "U4" H 3350 3150 50  0000 C CNN
-F 1 "TXB0108DQSR" H 3900 3150 50  0000 C CNN
-F 2 "Package_SON:USON-20_2x4mm_P0.4mm" H 3600 3050 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/txb0108.pdf" H 3600 3700 50  0001 C CNN
-	1    3600 3800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	4000 3500 4300 3500
+	3900 3400 4300 3400
 Wire Wire Line
-	4300 3500 4300 2350
+	4300 3400 4300 2350
 Wire Wire Line
 	4300 2350 4700 2350
 Wire Wire Line
-	4000 3600 4450 3600
+	3900 3500 4450 3500
 Wire Wire Line
-	4450 3600 4450 2800
+	4450 3500 4450 2800
 Wire Wire Line
 	4450 2800 4700 2800
 Wire Wire Line
-	4000 3700 4600 3700
+	3900 3600 4600 3600
 Wire Wire Line
-	4600 3700 4600 3250
+	4600 3600 4600 3250
 Wire Wire Line
 	4600 3250 4700 3250
 Wire Wire Line
-	4000 3800 4650 3800
+	3900 3800 4650 3800
 Wire Wire Line
-	4650 3800 4650 3700
-Wire Wire Line
-	4650 3700 4775 3700
-Wire Wire Line
-	4000 3900 4650 3900
-Wire Wire Line
-	4650 3900 4650 4150
+	4650 3800 4650 4150
 Wire Wire Line
 	4650 4150 5250 4150
 Wire Wire Line
-	4000 4000 4500 4000
+	3900 3900 4500 3900
 Wire Wire Line
-	4500 4000 4500 4600
+	4500 3900 4500 4600
 Wire Wire Line
 	4500 4600 5250 4600
 Wire Wire Line
-	4000 4100 4350 4100
+	3900 4000 4350 4000
 Wire Wire Line
-	4350 4100 4350 5050
+	4350 4000 4350 5050
 Wire Wire Line
 	4350 5050 5250 5050
 Wire Wire Line
-	4000 4200 4200 4200
+	3900 4100 4200 4100
 Wire Wire Line
-	4200 4200 4200 5500
+	4200 4100 4200 5500
 Wire Wire Line
 	4200 5500 5250 5500
 Text HLabel 2925 3500 0    50   Input ~ 0
-PWM1
-Text HLabel 2925 3600 0    50   Input ~ 0
 PWM2
-Text HLabel 2925 3700 0    50   Input ~ 0
+Text HLabel 2925 3600 0    50   Input ~ 0
 PWM3
-Text HLabel 2925 3800 0    50   Input ~ 0
+Text HLabel 2925 3700 0    50   Input ~ 0
 PWM4
-Text HLabel 2925 3900 0    50   Input ~ 0
+Text HLabel 2925 3800 0    50   Input ~ 0
 PWM5
-Text HLabel 2925 4000 0    50   Input ~ 0
+Text HLabel 2925 3900 0    50   Input ~ 0
 PWM6
-Text HLabel 2925 4100 0    50   Input ~ 0
+Text HLabel 2925 4000 0    50   Input ~ 0
 PWM7
-Text HLabel 2925 4200 0    50   Input ~ 0
+Text HLabel 2925 4100 0    50   Input ~ 0
 PWM8
+Text HLabel 2925 4200 0    50   Input ~ 0
+PWMOE
 Wire Wire Line
 	2925 3500 3200 3500
 Wire Wire Line
@@ -192,20 +175,20 @@ Wire Wire Line
 Wire Wire Line
 	2925 4100 3200 4100
 Wire Wire Line
-	2925 4200 3200 4200
+	2925 4200 3150 4200
 $Comp
 L power:GND #PWR022
 U 1 1 5C7744C7
-P 3600 4600
-F 0 "#PWR022" H 3600 4350 50  0001 C CNN
-F 1 "GND" H 3605 4427 50  0000 C CNN
-F 2 "" H 3600 4600 50  0001 C CNN
-F 3 "" H 3600 4600 50  0001 C CNN
-	1    3600 4600
+P 3600 4700
+F 0 "#PWR022" H 3600 4450 50  0001 C CNN
+F 1 "GND" H 3605 4527 50  0000 C CNN
+F 2 "" H 3600 4700 50  0001 C CNN
+F 3 "" H 3600 4700 50  0001 C CNN
+	1    3600 4700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3600 4600 3600 4550
+	3600 4700 3600 4650
 $Comp
 L power:GND #PWR024
 U 1 1 5C774AFD
@@ -369,14 +352,10 @@ Wire Wire Line
 Wire Wire Line
 	2925 2050 5000 2050
 Text HLabel 2925 3400 0    50   Input ~ 0
-PWMOE
-Text HLabel 2925 4550 0    50   Input ~ 0
+PWM1
+Text HLabel 2925 4650 0    50   Input ~ 0
 GND
-Wire Wire Line
-	2925 4550 3600 4550
-Connection ~ 3600 4550
-Wire Wire Line
-	3600 4550 3600 4500
+Connection ~ 3600 4650
 Wire Wire Line
 	2925 3400 3200 3400
 $Comp
@@ -889,4 +868,51 @@ Wire Wire Line
 	5200 6400 5200 6350
 Wire Wire Line
 	5200 6350 5250 6350
+$Comp
+L dk_Logic-Translators-Level-Shifters:TXB0108PWR U4
+U 1 1 5CB75ACC
+P 3600 3700
+F 0 "U4" H 3350 3050 60  0000 C CNN
+F 1 "TXB0108PWR" H 3900 3050 60  0000 C CNN
+F 2 "digikey-footprints:TSSOP-20_W4.4mm" H 3800 3900 60  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/txb0108.pdf" H 3800 4000 60  0001 L CNN
+F 4 "296-21527-1-ND" H 3800 4100 60  0001 L CNN "Digi-Key_PN"
+F 5 "TXB0108PWR" H 3800 4200 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 3800 4300 60  0001 L CNN "Category"
+F 7 "Logic - Translators, Level Shifters" H 3800 4400 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/lit/ds/symlink/txb0108.pdf" H 3800 4500 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/TXB0108PWR/296-21527-1-ND/1305700" H 3800 4600 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC TRNSLTR BIDIRECTIONAL 20TSSOP" H 3800 4700 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 3800 4800 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 3800 4900 60  0001 L CNN "Status"
+	1    3600 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3700 4775 3700
+$Comp
+L Device:R R10
+U 1 1 5CBE1CAD
+P 3150 4400
+F 0 "R10" H 2950 4450 50  0000 L CNN
+F 1 "R" H 2950 4350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3080 4400 50  0001 C CNN
+F 3 "~" H 3150 4400 50  0001 C CNN
+	1    3150 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 4250 3150 4200
+Connection ~ 3150 4200
+Wire Wire Line
+	3150 4200 3200 4200
+Wire Wire Line
+	3150 4550 3150 4650
+Wire Wire Line
+	2925 4650 3150 4650
+Connection ~ 3150 4650
+Wire Wire Line
+	3150 4650 3600 4650
+Wire Wire Line
+	3600 4400 3600 4650
 $EndSCHEMATC
